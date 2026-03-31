@@ -83,7 +83,7 @@ function HeroSection() {
       <div className="mx-auto flex max-w-6xl flex-col items-center px-6 pb-24 pt-24 text-center lg:pt-32">
         <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-sm font-medium text-primary">
           <Star className="h-3.5 w-3.5 fill-primary" />
-          Built for USPS Workers
+          Built for USPS Rural Carriers
         </div>
 
         <h1 className="max-w-3xl text-5xl font-extrabold leading-tight tracking-tight text-foreground sm:text-6xl lg:text-7xl">
@@ -96,7 +96,7 @@ function HeroSection() {
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-slate-600 sm:text-xl">
           PostalPay tracks your hours, mileage, and pay in real time — so you
           always know exactly what you&apos;ve earned. Built specifically for
-          mail carriers and postal employees.
+          USPS rural carriers, with city carrier support coming soon.
         </p>
 
         <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row">
@@ -118,7 +118,7 @@ function HeroSection() {
         {/* Stats bar */}
         <div className="mt-20 grid w-full max-w-2xl grid-cols-3 divide-x divide-border rounded-2xl border border-border bg-white p-6 shadow-sm">
           <Stat value="Real-Time" label="Pay Calculations" />
-          <Stat value="USPS" label="Positions Supported" />
+          <Stat value="Rural" label="Carrier Focused" />
           <Stat value="Offline" label="First Architecture" />
         </div>
       </div>
@@ -227,7 +227,7 @@ function HowItWorksSection() {
       icon: Smartphone,
       title: "Set Up Your Profile",
       description:
-        "Enter your position (Regular, CCA, RCA, PSE), pay rate, and the offices and routes you work. PostalPay handles the rest.",
+        "Enter your position, pay rate, and the offices and routes you work. PostalPay handles the rest.",
     },
     {
       step: "02",
@@ -288,22 +288,22 @@ function HowItWorksSection() {
 function DetailsSection() {
   const positions = [
     {
-      icon: Truck,
-      title: "City Carriers (CCA & Regular)",
-      description:
-        "Track hourly pay with overtime, evaluation route pay when evaluated time exceeds actual hours, and full mileage reimbursement.",
-    },
-    {
       icon: MapPin,
       title: "Rural Carriers (RCA & Regular)",
       description:
-        "Evaluation-based pay, green card secondary route tracking, and own-vehicle mileage calculations built in.",
+        "Evaluation-based pay, green card secondary route tracking, and own-vehicle mileage calculations — all built in and ready to use today.",
+    },
+    {
+      icon: Truck,
+      title: "City Carriers — Coming Soon",
+      description:
+        "Full city carrier support is on the way, including hourly pay with overtime, evaluation route pay, and mileage reimbursement.",
     },
     {
       icon: CalendarDays,
-      title: "PSE & Other Positions",
+      title: "More Positions — Coming Soon",
       description:
-        "Flexible configuration supports any USPS position with customizable pay rates, overtime thresholds, and multipliers.",
+        "Support for PSE and other USPS positions is in development, with customizable pay rates, overtime thresholds, and multipliers.",
     },
   ];
 
@@ -312,14 +312,15 @@ function DetailsSection() {
       <div className="mx-auto max-w-6xl px-6">
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-widest text-primary">
-            Built for Every Role
+            Who It&apos;s For
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
-            Your position. Your pay rules.
+            Built for rural carriers. Expanding soon.
           </h2>
           <p className="mt-4 text-lg text-slate-600">
-            USPS compensation is complicated. PostalPay understands the
-            nuances of every position and pay type.
+            PostalPay currently supports USPS rural carriers with full
+            pay tracking. City carrier and additional position support is
+            actively in development.
           </p>
         </div>
 
